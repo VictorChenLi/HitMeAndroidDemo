@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_listItem"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+    android:id="@+id/layout_dataView"
+    android:background="#FFFFFF"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    	<TextView
+	        android:id="@+id/tv_dataView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#000000"
+	        android:textSize="20sp"/>
+    </LinearLayout>
+    <RelativeLayout 
+    android:layout_below="@+id/layout_dataView"
+    android:id="@+id/layout_taskInfo"
+	android:layout_width="fill_parent"
+    android:layout_height="35dip"
+    android:orientation="horizontal" >
+		<TextView
+	        android:id="@+id/tv_taskId"
+			android:visibility="invisible"
+	        android:layout_width="0dip"
+	        android:layout_height="0dip" />
+
+    	<TextView
+    	    android:id="@+id/tv_taskName"
+    	    android:textSize="20sp"
+	        android:textColor="#FFFFFF"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_marginLeft="12sp"/>
+    	
+    	<TextView
+    	    android:id="@+id/tv_taskStatus"
+    	    android:textSize="20sp"
+	        android:textColor="#FFFFFF"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/tv_taskName"
+    	    android:layout_marginLeft="12sp"/>
+
+    	<TextView
+	        android:id="@+id/tv_taskType"
+	        android:textColor="#FFFFFF"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="12sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/tv_startTime"/>
+    	<TextView
+	        android:id="@+id/tv_startTime"
+	        android:textColor="#FFFFFF"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="12sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"/>
+	</RelativeLayout>
+	<RelativeLayout 
+	android:layout_below="@+id/layout_taskInfo"
+	android:id="@+id/layout_taskDetail"
+	android:visibility="invisible"
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+		<TextView
+	        android:id="@+id/tv_taskContent"
+    	    android:layout_alignParentLeft="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+		<TextView
+	        android:id="@+id/tv_spendTime"
+	        android:background="#555555"
+	        android:layout_marginRight="12sp"
+	        android:layout_alignParentRight="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	</RelativeLayout>
+</RelativeLayout>

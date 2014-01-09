@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" 
+android:layout_width="fill_parent" 
+android:layout_height="match_parent">
+	<ListView
+	    android:id="@+id/lv_todo"
+	    android:layout_width="fill_parent"
+	    android:layout_marginBottom="45dip"
+	    android:layout_height="wrap_content" >
+	</ListView>
+	
+	<Button
+	    android:id="@+id/btn_add"
+		style="@style/btn_dark"
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:text="@string/done_add" />
+</RelativeLayout>

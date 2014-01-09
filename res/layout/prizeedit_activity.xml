@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:stretchColumns="2">
+    
+	<TableRow> 
+	    <TextView
+	        android:layout_column="1"
+	        android:id="@+id/tv_prizeName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/prize_name" />
+	
+	    <EditText
+	        android:layout_column="2"
+	        android:id="@+id/et_Name"
+	        style="@style/et_dark"
+	        android:layout_marginLeft="5dip"
+	        android:shadowRadius="3.0"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="text" >
+	
+	        <requestFocus />
+	    </EditText>
+    </TableRow>
+    <TableRow android:id="@+id/tr_prizeCount">
+		<TextView
+	        android:layout_column="1"
+	        android:id="@+id/tv_availableCount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/available_count" />
+	<EditText
+	        android:layout_column="2"
+	        android:id="@+id/et_availableCount"
+	        style="@style/et_dark"
+	        android:layout_marginLeft="5dip"
+	        android:shadowRadius="3.0"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="5"
+	        android:inputType="text" >
+	    </EditText>
+	</TableRow>
+    <TableRow android:id="@+id/tr_prizeType"> 
+		 <TextView
+	        android:layout_column="1"
+	        android:id="@+id/tv_prizeRate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/prize_rate" />
+		<RadioGroup
+	        android:layout_column="2"
+	        android:id="@+id/rg_prizeRate"
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+			<RadioButton
+			     android:id="@+id/rb_nomal"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:checked="true"
+			     android:text="@string/prize_rate_nomal"/>
+			<RadioButton
+			     android:id="@+id/rb_great"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:text="@string/prize_rate_great"/>
+			<RadioButton
+			     android:id="@+id/rb_superb"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:text="@string/prize_rate_superb"/>
+    	</RadioGroup>
+   	</TableRow> 
+	
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:orientation="horizontal" >
+
+		<Button
+		    android:id="@+id/btn_save"
+			style="@style/btn_dark"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/done_edit" />
+	  
+	</LinearLayout>
+</TableLayout>
