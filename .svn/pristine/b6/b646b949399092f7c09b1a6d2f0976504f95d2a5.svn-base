@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android">    
-    <style name="btn_dark" parent="@android:style/Widget.Button">
-        <item name="android:background">@drawable/stl_button</item>
-	    <item name="android:textColor">#f2eada</item>
-    </style>
-</resources>
